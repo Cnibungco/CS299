@@ -21,8 +21,6 @@ class WhoSampledSpider(scrapy.Spider):
     artist_url = 'https://www.whosampled.com/J-Dilla/?role=2&sp={}'
     start_urls = [artist_url.format(1)]
 
-    crawlera_enabled = True
-    crawlera_apikey = '7cbce9164ea04661a47951f45bd77690'
 
     # main parsing method to go through pages and initiate parseTrackURL method
     # this parse method paginates all links
